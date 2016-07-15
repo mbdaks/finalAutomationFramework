@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="41626" started-at="2016-07-15T12:01:03Z" finished-at="2016-07-15T12:01:45Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="41626" started-at="2016-07-15T12:01:03Z" finished-at="2016-07-15T12:01:45Z">
+      <class name="finalAutomationFramework.TestCase1">
+        <test-method status="PASS" signature="createNewSheet()[pri:0, instance:finalAutomationFramework.TestCase1@5e5792a0]" name="createNewSheet" is-config="true" duration-ms="7015" started-at="2016-07-15T17:30:56Z" finished-at="2016-07-15T17:31:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewSheet -->
+        <test-method status="PASS" signature="beforeScript()[pri:0, instance:finalAutomationFramework.TestCase1@5e5792a0]" name="beforeScript" is-config="true" duration-ms="10693" started-at="2016-07-15T17:31:03Z" finished-at="2016-07-15T17:31:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeScript -->
+        <test-method status="PASS" signature="main()[pri:0, instance:finalAutomationFramework.TestCase1@5e5792a0]" name="main" duration-ms="16035" started-at="2016-07-15T17:31:14Z" finished-at="2016-07-15T17:31:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+        <test-method status="PASS" signature="writeResults(org.testng.ITestResult)[pri:0, instance:finalAutomationFramework.TestCase1@5e5792a0]" name="writeResults" is-config="true" duration-ms="2" started-at="2016-07-15T17:31:30Z" finished-at="2016-07-15T17:31:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=main status=SUCCESS method=TestCase1.main()[pri:0, instance:finalAutomationFramework.TestCase1@5e5792a0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- writeResults -->
+        <test-method status="PASS" signature="beforeScript()[pri:0, instance:finalAutomationFramework.TestCase1@5e5792a0]" name="beforeScript" is-config="true" duration-ms="5327" started-at="2016-07-15T17:31:30Z" finished-at="2016-07-15T17:31:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeScript -->
+        <test-method status="PASS" signature="main()[pri:0, instance:finalAutomationFramework.TestCase1@5e5792a0]" name="main" duration-ms="8645" started-at="2016-07-15T17:31:35Z" finished-at="2016-07-15T17:31:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+        <test-method status="PASS" signature="writeResults(org.testng.ITestResult)[pri:0, instance:finalAutomationFramework.TestCase1@5e5792a0]" name="writeResults" is-config="true" duration-ms="0" started-at="2016-07-15T17:31:44Z" finished-at="2016-07-15T17:31:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=main status=SUCCESS method=TestCase1.main()[pri:0, instance:finalAutomationFramework.TestCase1@5e5792a0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- writeResults -->
+        <test-method status="PASS" signature="afterScript()[pri:0, instance:finalAutomationFramework.TestCase1@5e5792a0]" name="afterScript" is-config="true" duration-ms="901" started-at="2016-07-15T17:31:44Z" finished-at="2016-07-15T17:31:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterScript -->
+        <test-method status="PASS" signature="setupAfterSuite()[pri:0, instance:finalAutomationFramework.TestCase1@5e5792a0]" name="setupAfterSuite" is-config="true" duration-ms="9203" started-at="2016-07-15T17:31:45Z" finished-at="2016-07-15T17:31:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupAfterSuite -->
+      </class> <!-- finalAutomationFramework.TestCase1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
