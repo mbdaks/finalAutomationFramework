@@ -1,0 +1,8 @@
+The main java file that must be run is "TestCase1.java"
+Several other test cases will have a similar name. 
+These files are the ones that are dependent on the particular website(here: Jetstar).
+The "data.java" file contains all the initializations required for the other classes to work.
+These initializations can be changed according to our needs.
+Rest of the functions in the project are independent and form the main part of the framework.
+
+
