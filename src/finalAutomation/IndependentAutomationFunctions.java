@@ -1,6 +1,7 @@
-package finalAutomationFramework;
+package finalAutomation;
 
 import java.io.IOException;
+import testCases.WebsiteSpecificData;
 
 public class IndependentAutomationFunctions {	
 	//function to get the property value i.e., the id value of a specific control

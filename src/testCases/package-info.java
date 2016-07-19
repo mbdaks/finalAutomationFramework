@@ -5,4 +5,4 @@
  * @author HP
  *
  */
-package finalAutomation;
+package testCases;

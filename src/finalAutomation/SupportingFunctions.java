@@ -1,4 +1,4 @@
-package finalAutomationFramework;
+package finalAutomation;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -34,6 +34,7 @@ import org.apache.poi.xssf.usermodel.XSSFFormulaEvaluator;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import testCases.WebsiteSpecificData;
 
 public class SupportingFunctions {
 	//get the workbook

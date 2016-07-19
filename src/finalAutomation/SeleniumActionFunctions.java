@@ -1,10 +1,11 @@
-package finalAutomationFramework;
+package finalAutomation;
 
 import java.io.IOException;
 import java.util.Calendar;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.ui.Select;
+import testCases.WebsiteSpecificData;
 
 public class SeleniumActionFunctions {
 	public static int currentRowInDataExcel=0;
@@ -25,8 +26,8 @@ public class SeleniumActionFunctions {
 	}
 
 	public void sendKeysAction(WebsiteSpecificData dataObject, String pageName, String controlHead) throws IOException{
-		String locatorValue=IndependentAutomationFunctions.returnLocatorValue(dataObject, pageName, controlHead);
-		String sendValue=IndependentAutomationFunctions.returnValueToBeSentToWebPage(dataObject, currentRowInDataExcel, controlHead);
+		String locatorValue = IndependentAutomationFunctions.returnLocatorValue(dataObject, pageName, controlHead);
+		String sendValue = IndependentAutomationFunctions.returnValueToBeSentToWebPage(dataObject, currentRowInDataExcel, controlHead);
 		dataObject.driver.findElement(By.id(locatorValue)).clear();
 		dataObject.driver.findElement(By.id(locatorValue)).sendKeys(sendValue);
 		dataObject.kb.pressKey(Keys.RETURN);
