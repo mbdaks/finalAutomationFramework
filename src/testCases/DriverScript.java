@@ -1,3 +1,7 @@
+/**
+ * Contains test data specific classes
+ * @author Mehak Bains
+ */
 package testCases;
 
 import java.io.IOException;
@@ -16,20 +20,59 @@ import finalAutomation.IndependentAutomationFunctions;
 import finalAutomation.SeleniumActionFunctions;
 import finalAutomation.SupportingFunctions;
 
+/**
+ * <p>This is the class that contains the main test method which is to be run.
+ * Various TestNG annotations are included to perform different tasks.
+ * It includes all the Test data specific operations that must be performed.
+ * We can have all the TestCases in this very class by using different
+ * @Test annotation and assigning them different priorities
+ * </p>
+ * The flow of the script is such that:
+ * 1. Configurable parameters are initialized and result sheet for the test is created.<br>
+ * 2. Before every test, a particular URL is opened in the browser.<br>
+ * 3. Test is then run which contains Selenium Actions.<br>
+ * 4. For every test that is run, test results are recorded.<br>
+ * 5. Driver is quit.<br>
+ * 6. Test results are written into the result sheet for all the tests which is mailed to the required email id.<br>
+ * It inherits methods from the class SeleniumActionFunctions.
+ * @author Mehak Bains
+ */
 public class DriverScript extends SeleniumActionFunctions{
+	/**
+	 * An object of type WebsiteSpecificData to access all the configurable parameters.
+	 */
 	WebsiteSpecificData dataObject;
-	
+	/**
+	 * Runs only once before all the tests 
+	 * to initiate all parameters specific to the website in question
+	 * by calling the constructor of class WebsiteSpecificData
+	 * and to create an excelSheet to store test results.
+	 * @throws IOException
+	 * @throws InvalidFormatException
+	 */
 	@BeforeSuite
 	 public void createResultSheet() throws IOException, InvalidFormatException{
 		dataObject = new WebsiteSpecificData();
 		SupportingFunctions.createNewSheet(dataObject);
 	}
 	
+	/**
+	 * Runs every time before a test and opens the website.
+	 * @throws InvalidFormatException
+	 * @throws IOException
+	 */
 	@BeforeMethod
 	public void beforeScript() throws InvalidFormatException, IOException {
 		openWebsite(dataObject);		
 	}
-		
+	
+	/**
+	 * The main test method which includes various Selenium Actions to be performed
+	 * and is run as many times as the invocationCount.
+	 * @throws IOException
+	 * @throws InterruptedException
+	 * @throws InvalidFormatException
+	 */
 	@Test(invocationCount = 10)
 	public void main() throws IOException, InterruptedException, InvalidFormatException{
 		long startTime = Calendar.getInstance().getTimeInMillis();
@@ -50,6 +93,11 @@ public class DriverScript extends SeleniumActionFunctions{
 		System.out.println("TIME TAKEN: " + (Calendar.getInstance().getTimeInMillis() - startTime));
 	}
 	
+	/**
+	 * Runs after every other test and records the test results in a LinkedHashMap.
+	 * @param result The result(Success, Failure or Skipped) of the test executed
+	 * @throws Exception
+	 */
 	@AfterMethod
 	public void writeResults(ITestResult result) throws Exception{
 		int test = result.getStatus();
@@ -72,6 +120,9 @@ public class DriverScript extends SeleniumActionFunctions{
 		}
 	}
 	
+	/**
+	 * Runs once after all the tests have been executed and quits from the driver.
+	 */
 	@AfterTest
 	public void afterScript() {
 		long startTime = Calendar.getInstance().getTimeInMillis();
@@ -79,6 +130,12 @@ public class DriverScript extends SeleniumActionFunctions{
 		System.out.println("TIME TAKEN: " + (Calendar.getInstance().getTimeInMillis() - startTime));
 	}
 	
+	/**
+	 * Writes recorded test results in the test result excel sheet
+	 * and sends this excel sheet as an attachment in an email as required.
+	 * @throws MessagingException
+	 * @throws IOException
+	 */
 	@AfterSuite
 	 public void setupAfterSuite() throws MessagingException, IOException {
 		SupportingFunctions.writeInResultSheet(dataObject); 	

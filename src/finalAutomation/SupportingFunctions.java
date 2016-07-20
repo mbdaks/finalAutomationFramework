@@ -36,8 +36,20 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import testCases.WebsiteSpecificData;
 
+/**
+ * This class contains supporting methods that perform tasks like<br>
+ * -Reading and writing (Excel and POI related)<br>
+ * -Sending email<br>
+ * -Taking screenshots<br>
+ * @author Mehak Bains
+ */
 public class SupportingFunctions {
-	//get the workbook
+	/** 
+	 * @param filePath Variable holding the name of the excel file in consideration.
+	 * @return Workbook for that specific file path
+	 * @throws IOException
+	 * @throws InvalidFormatException
+	 */
 	public static Workbook returnWorkBook(String filePath) throws IOException, InvalidFormatException{
 		File file = new File(filePath);
 		OPCPackage opcPackage = OPCPackage.open(file);
@@ -45,24 +57,46 @@ public class SupportingFunctions {
 		return workbook;
 	}
 	
-	//get the sheet
+	/**
+	 * @param book Workbook in consideration.
+	 * @return Sheet - Worksheet for that specific workbook
+	 */
 	public static Sheet returnSheet(Workbook book){
 		Sheet sheet = book.getSheetAt(0);
 		return sheet;
 	}
 	
-	//cell value evaluating supporting functions
+	/**
+	 * Required for appropriate formatting of the cell values 
+	 * read from an excel sheet as Strings.
+	 * @return DataFormatter
+	 */
 	public static DataFormatter getDataFormat(){
 		DataFormatter formatting = new DataFormatter();
 		return formatting;
 	}
 	
+	/**
+	 * Required for appropriate formatting of the cell values 
+	 * read from an excel sheet as Strings.
+	 * @param book Workbook in consideration
+	 * @return Formula Evaluator
+	 * @throws IOException
+	 */
 	public static FormulaEvaluator getFormulaEval(Workbook book) throws IOException{
 		FormulaEvaluator foreval = new XSSFFormulaEvaluator((XSSFWorkbook) book);
 		return foreval;
 	}
 	
-	//to get the correct column number for the given value
+	/**
+	 * Reads the excel sheet one row at a time to get the 
+	 * column number corresponding to the input head colValue.
+	 * @param colValue Holds the string value for which we need the column number
+	 * @param sheet Sheet in consideration
+	 * @param book Workbook in consideration
+	 * @return int - Column number corresponding to the input head colValue
+	 * @throws IOException
+	 */
 	public static int extractColumnNum(String colValue, Sheet sheet, Workbook book) throws IOException{
 		Row row = null;
 		Cell cell = null;
@@ -82,7 +116,16 @@ public class SupportingFunctions {
 		return 0;
 	}
 	
-	//to get correct row number for a values
+	/**
+	 * Reads an excel sheet one row at a time and contains nested if loops
+	 * to decide the row number on the basis of two values.
+	 * @param rowValue Holds the string value for which we need the row number
+	 * @param rowDecider Holds the string value for which decides the number
+	 * @param sheet String in consideration
+	 * @param book Workbook in consideration
+	 * @return int - Row number for a particular set of values
+	 * @throws IOException
+	 */
 	public static int extractRowNum(String rowValue, String rowDecider, Sheet sheet, Workbook book) throws IOException{
 		String testData = "", colValue = "Page", colDecider = "Control";
 		//iterate over all the rows to get those containing the given pageName
@@ -100,16 +143,29 @@ public class SupportingFunctions {
 		return 0;
 	}
 	
-	//given row number and column, evaluate and return the cell value when reading from an excel sheet
-	public static String getValue(int columnHead, int rowNum, Sheet sheet, Workbook book) throws IOException{
+	/**
+	 * Get the string value in a particular cell in the sheet at given
+	 * row and column numbers.
+	 * @param colNum Column number for the cell in consideration
+	 * @param rowNum Row number for the cell in consideration
+	 * @param sheet Sheet
+	 * @param book Workbook
+	 * @return String - CellValue in a particular cell in the sheet
+	 * @throws IOException
+	 */
+	public static String getValue(int colNum, int rowNum, Sheet sheet, Workbook book) throws IOException{
 			Row row = sheet.getRow(rowNum);
-			Cell cell = row.getCell(columnHead);
+			Cell cell = row.getCell(colNum);
 			getFormulaEval(book).evaluate(cell);
 			String cellValue = getDataFormat().formatCellValue(cell, getFormulaEval(book));			
 			return cellValue;
 	}
 	
-	//function to create the result sheet at run time
+	/**
+	 * Creates a new excel sheet and provides name to the sheet on the run with a time stamp.
+	 * @param dataObject Object of class WebsiteSpecificData used to access configurable parameters
+	 * @throws IOException
+	 */
 	public static void createNewSheet(WebsiteSpecificData dataObject) throws IOException{
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
 		dataObject.resultFile += timeStamp + ".xlsx";
@@ -134,80 +190,96 @@ public class SupportingFunctions {
 		System.out.println("Required excel file finally Created");
 		}
 		
-		//function to write results in the result sheet after test execution
-		public static void writeInResultSheet(WebsiteSpecificData dataObject) throws IOException{
-			 Set<String> keyset = dataObject.testresultdata.keySet();
-			    int rownum = 1;
-			    for (String key : keyset) {
-			        Row row = dataObject.resultSheet.createRow(rownum++);
-			        Object [] objArr = dataObject.testresultdata.get(key);
-			        int cellnum = 0;
-			        for (Object obj : objArr) {
-			            Cell cell = row.createCell(cellnum++);
-			            if(obj instanceof Date) 
-			                cell.setCellValue((Date)obj);
-			            else if(obj instanceof Boolean)
-			                cell.setCellValue((Boolean)obj);
-			            else if(obj instanceof String)
-			                cell.setCellValue((String)obj);
-			            else if(obj instanceof Double)
-			                cell.setCellValue((Double)obj);
-			        }
-			    }
-		        FileOutputStream outstream = new FileOutputStream(dataObject.resultFile);
-		        dataObject.resultWorkBook.write(outstream);
-		        System.out.println("Excel written successfully!!!");
-		}
-		
-		//function to get screeenshots at a particular time
-		public static String getScreenshot(WebsiteSpecificData dataObject) throws Exception{
-	        File scrFile = ((TakesScreenshot)dataObject.driver).getScreenshotAs(OutputType.FILE);
-	        String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
-	        String screenShotName = dataObject.screenShotBase + timeStamp + ".gif";
-	        FileUtils.copyFile(scrFile, new File(screenShotName));
-	        return screenShotName;
-		}
-		
-		//function to send the result sheet as an attachment in the email
-		public static void sendEmail(WebsiteSpecificData dataObject) throws AddressException, MessagingException{
-			dataObject.subject = dataObject.subject + dataObject.resultFile;
-			Properties properties = new Properties();
-		    properties.put("mail.smtp.host", dataObject.host);
-		    properties.put("mail.smtp.port", dataObject.port);
-		    properties.put("mail.smtp.auth", "true");
-		    properties.put("mail.smtp.starttls.enable", "true");
-		    properties.put("mail.user", dataObject.mailFrom);
-		    properties.put("mail.password", dataObject.password);
-		    // creates a new session with an authenticator
-		    Authenticator auth = new Authenticator() {
-		        public PasswordAuthentication getPasswordAuthentication() {
-		            return new PasswordAuthentication(dataObject.mailFrom, dataObject.password);
+	/**
+	 * Writes test results into the result sheet that was created at run time.
+	 * @param dataObject Object of class WebsiteSpecificData used to access configurable parameters
+	 * @throws IOException
+	 */
+	public static void writeInResultSheet(WebsiteSpecificData dataObject) throws IOException{
+		 Set<String> keyset = dataObject.testresultdata.keySet();
+		    int rownum = 1;
+		    for (String key : keyset) {
+		        Row row = dataObject.resultSheet.createRow(rownum++);
+		        Object [] objArr = dataObject.testresultdata.get(key);
+		        int cellnum = 0;
+		        for (Object obj : objArr) {
+		            Cell cell = row.createCell(cellnum++);
+		            if(obj instanceof Date) 
+		                cell.setCellValue((Date)obj);
+		            else if(obj instanceof Boolean)
+		                cell.setCellValue((Boolean)obj);
+		            else if(obj instanceof String)
+		                cell.setCellValue((String)obj);
+		            else if(obj instanceof Double)
+		                cell.setCellValue((Double)obj);
 		        }
-		    };
-		    Session session = Session.getInstance(properties, auth);
-		    // creates a new e-mail message
-		    Message msg = new MimeMessage(session);
-		    msg.setFrom(new InternetAddress(dataObject.mailFrom));
-		    InternetAddress[] toAddresses = { new InternetAddress(dataObject.mailTo) };
-		    msg.setRecipients(Message.RecipientType.TO, toAddresses);
-		    msg.setSubject(dataObject.subject);
-		    msg.setSentDate(new Date());
-		    // creates message part
-		    MimeBodyPart part1 = new MimeBodyPart();
-		    part1.setContent(dataObject.message, "text/html");
-		    MimeBodyPart part2 = new MimeBodyPart();
-		    // attach the file to the message
-		     FileDataSource fds = new FileDataSource(dataObject.resultFile);
-		     part2.setDataHandler(new DataHandler(fds));
-		     part2.setFileName(fds.getName());
-			// creates multi-part
-		    Multipart multipart = new MimeMultipart();
-		    multipart.addBodyPart(part1);  
-		    multipart.addBodyPart(part2);
-		    // sets the multi-part as e-mail's content
-		    msg.setContent(multipart);
-		    msg.setSentDate(new Date());
-		    // sends the e-mail
-		    Transport.send(msg);
-		}
+		    }
+	        FileOutputStream outstream = new FileOutputStream(dataObject.resultFile);
+	        dataObject.resultWorkBook.write(outstream);
+	        System.out.println("Excel written successfully!!!");
+	}
+	
+	/**
+	 * Takes a screenshot at any given point of time in gif format 
+	 * and provides it a name defined by the time stamp.
+	 * @param dataObject Object of class WebsiteSpecificData used to access configurable parameters
+	 * @return String - Screenshot's name
+	 * @throws Exception
+	 */
+	public static String getScreenshot(WebsiteSpecificData dataObject) throws Exception{
+        File scrFile = ((TakesScreenshot)dataObject.driver).getScreenshotAs(OutputType.FILE);
+        String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
+        String screenShotName = dataObject.screenShotBase + timeStamp + ".gif";
+        FileUtils.copyFile(scrFile, new File(screenShotName));
+        return screenShotName;
+	}
+	
+	/**
+	 * Sends the result sheet as an attachment in an email
+	 * when the sender and receiver's email id are provided.
+	 * @param dataObject Object of class WebsiteSpecificData used to access configurable parameters
+	 * @throws AddressException
+	 * @throws MessagingException
+	 */
+	public static void sendEmail(WebsiteSpecificData dataObject) throws AddressException, MessagingException{
+		dataObject.subject = dataObject.subject + dataObject.resultFile;
+		Properties properties = new Properties();
+	    properties.put("mail.smtp.host", dataObject.host);
+	    properties.put("mail.smtp.port", dataObject.port);
+	    properties.put("mail.smtp.auth", "true");
+	    properties.put("mail.smtp.starttls.enable", "true");
+	    properties.put("mail.user", dataObject.mailFrom);
+	    properties.put("mail.password", dataObject.password);
+	    // creates a new session with an authenticator
+	    Authenticator auth = new Authenticator() {
+	        public PasswordAuthentication getPasswordAuthentication() {
+	            return new PasswordAuthentication(dataObject.mailFrom, dataObject.password);
+	        }
+	    };
+	    Session session = Session.getInstance(properties, auth);
+	    // creates a new e-mail message
+	    Message msg = new MimeMessage(session);
+	    msg.setFrom(new InternetAddress(dataObject.mailFrom));
+	    InternetAddress[] toAddresses = { new InternetAddress(dataObject.mailTo) };
+	    msg.setRecipients(Message.RecipientType.TO, toAddresses);
+	    msg.setSubject(dataObject.subject);
+	    msg.setSentDate(new Date());
+	    // creates message part
+	    MimeBodyPart part1 = new MimeBodyPart();
+	    part1.setContent(dataObject.message, "text/html");
+	    MimeBodyPart part2 = new MimeBodyPart();
+	    // attach the file to the message
+	     FileDataSource fds = new FileDataSource(dataObject.resultFile);
+	     part2.setDataHandler(new DataHandler(fds));
+	     part2.setFileName(fds.getName());
+		// creates multi-part
+	    Multipart multipart = new MimeMultipart();
+	    multipart.addBodyPart(part1);  
+	    multipart.addBodyPart(part2);
+	    // sets the multi-part as e-mail's content
+	    msg.setContent(multipart);
+	    msg.setSentDate(new Date());
+	    // sends the e-mail
+	    Transport.send(msg);
+	}
 }
