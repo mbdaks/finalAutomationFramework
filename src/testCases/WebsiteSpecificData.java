@@ -1,7 +1,9 @@
 package testCases;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.HashMap;
+import java.util.Properties;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -14,11 +16,9 @@ import finalAutomation.SupportingFunctions;
 
 public class WebsiteSpecificData {
 	public String baseUrl;
-	public String propertyFile,dataFile;
-	public String resultFile;
+	public String propertyFile,dataFile,resultFile;
 	public int testDataNum;
-	public Workbook dataWorkBook,propertyWorkBook;
-	public Workbook resultWorkBook;
+	public Workbook dataWorkBook,propertyWorkBook,resultWorkBook;
 	public Sheet dataSheet,propertySheet,resultSheet;
 	public String screenShotBase;
 	public String host,port,mailFrom,password,mailTo,subject,message;
@@ -28,18 +28,30 @@ public class WebsiteSpecificData {
 	public Keyboard kb;
 
 	WebsiteSpecificData() throws IOException, InvalidFormatException{
-	    baseUrl = "http://uat.jetstar.com/SkySalesTest/Search.aspx";
-		propertyFile = "C:\\Users\\HP\\flightBookings\\resources\\Input\\Properties.xlsx";
-		dataFile = "C:\\Users\\HP\\flightBookings\\resources\\Input\\Data.xlsx";
-		testDataNum = 0;
-		screenShotBase = "C:\\Users\\HP\\flightBookings\\resources\\Output\\ScreenShots\\SS_";
-		host = "smtp.gmail.com";
-	    port = "25";
-	    mailFrom = "ykwsnape321@gmail.com";
-	    password = "DAWNDYNASTYDIARIES";
-	    mailTo = "ykw132snape@gmail.com";
-	    subject = "Execution Results : ";
-	    message = "Attached : excel sheet containing result";
+	    
+		Properties properties = new Properties();
+		Thread currentThread = Thread.currentThread();
+		ClassLoader contextClassLoader = currentThread.getContextClassLoader();
+		InputStream propertiesStream = contextClassLoader.getResourceAsStream("config.properties");
+		if (propertiesStream != null) {
+		  properties.load(propertiesStream);
+		} else {
+		  System.out.println("Properties file not found!");
+		}
+		baseUrl = properties.getProperty("baseUrl");
+		propertyFile = properties.getProperty("propertyFile");
+		dataFile = properties.getProperty("dataFile");
+		resultFile = properties.getProperty("resultFile");
+		testDataNum = new Integer(properties.getProperty("testDataNum"));
+		screenShotBase = properties.getProperty("screenShotBase");
+		host = properties.getProperty("host");
+	    port = properties.getProperty("port");
+	    mailFrom = properties.getProperty("mailFrom");
+	    password = properties.getProperty("password");
+	    mailTo = properties.getProperty("mailTo");
+	    subject = properties.getProperty("subject");
+	    message = properties.getProperty("message");
+		
 	    dataWorkBook = SupportingFunctions.returnWorkBook(dataFile);
 		dataSheet = SupportingFunctions.returnSheet(dataWorkBook);
 		propertyWorkBook = SupportingFunctions.returnWorkBook(propertyFile);

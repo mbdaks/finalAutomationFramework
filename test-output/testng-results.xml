@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="7" total="10" passed="3">
+<testng-results skipped="0" failed="2" total="10" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="194655" started-at="2016-07-19T06:27:16Z" finished-at="2016-07-19T06:30:31Z">
+  <suite name="Default suite" duration-ms="228529" started-at="2016-07-19T11:50:42Z" finished-at="2016-07-19T11:54:30Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="194655" started-at="2016-07-19T06:27:16Z" finished-at="2016-07-19T06:30:31Z">
+    <test name="Default test" duration-ms="228529" started-at="2016-07-19T11:50:42Z" finished-at="2016-07-19T11:54:30Z">
       <class name="testCases.DriverScript">
-        <test-method status="PASS" signature="createResultSheet()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="createResultSheet" is-config="true" duration-ms="6673" started-at="2016-07-19T11:57:10Z" finished-at="2016-07-19T11:57:16Z">
+        <test-method status="PASS" signature="createResultSheet()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="createResultSheet" is-config="true" duration-ms="6508" started-at="2016-07-19T17:20:35Z" finished-at="2016-07-19T17:20:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createResultSheet -->
-        <test-method status="PASS" signature="beforeScript()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="beforeScript" is-config="true" duration-ms="9705" started-at="2016-07-19T11:57:16Z" finished-at="2016-07-19T11:57:26Z">
+        <test-method status="PASS" signature="beforeScript()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="beforeScript" is-config="true" duration-ms="40893" started-at="2016-07-19T17:20:42Z" finished-at="2016-07-19T17:21:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeScript -->
-        <test-method status="PASS" signature="main()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="main" duration-ms="13647" started-at="2016-07-19T11:57:26Z" finished-at="2016-07-19T11:57:40Z">
+        <test-method status="PASS" signature="main()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="main" duration-ms="32494" started-at="2016-07-19T17:21:23Z" finished-at="2016-07-19T17:21:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- main -->
-        <test-method status="PASS" signature="writeResults(org.testng.ITestResult)[pri:0, instance:testCases.DriverScript@5e5792a0]" name="writeResults" is-config="true" duration-ms="2" started-at="2016-07-19T11:57:40Z" finished-at="2016-07-19T11:57:40Z">
+        <test-method status="PASS" signature="writeResults(org.testng.ITestResult)[pri:0, instance:testCases.DriverScript@5e5792a0]" name="writeResults" is-config="true" duration-ms="2" started-at="2016-07-19T17:21:55Z" finished-at="2016-07-19T17:21:55Z">
           <params>
             <param index="0">
               <value>
@@ -30,15 +30,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- writeResults -->
-        <test-method status="PASS" signature="beforeScript()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="beforeScript" is-config="true" duration-ms="5578" started-at="2016-07-19T11:57:40Z" finished-at="2016-07-19T11:57:45Z">
+        <test-method status="PASS" signature="beforeScript()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="beforeScript" is-config="true" duration-ms="8250" started-at="2016-07-19T17:21:55Z" finished-at="2016-07-19T17:22:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeScript -->
-        <test-method status="PASS" signature="main()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="main" duration-ms="8343" started-at="2016-07-19T11:57:45Z" finished-at="2016-07-19T11:57:54Z">
+        <test-method status="PASS" signature="main()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="main" duration-ms="15224" started-at="2016-07-19T17:22:03Z" finished-at="2016-07-19T17:22:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- main -->
-        <test-method status="PASS" signature="writeResults(org.testng.ITestResult)[pri:0, instance:testCases.DriverScript@5e5792a0]" name="writeResults" is-config="true" duration-ms="1" started-at="2016-07-19T11:57:54Z" finished-at="2016-07-19T11:57:54Z">
+        <test-method status="PASS" signature="writeResults(org.testng.ITestResult)[pri:0, instance:testCases.DriverScript@5e5792a0]" name="writeResults" is-config="true" duration-ms="0" started-at="2016-07-19T17:22:18Z" finished-at="2016-07-19T17:22:18Z">
           <params>
             <param index="0">
               <value>
@@ -49,15 +49,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- writeResults -->
-        <test-method status="PASS" signature="beforeScript()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="beforeScript" is-config="true" duration-ms="4101" started-at="2016-07-19T11:57:54Z" finished-at="2016-07-19T11:57:58Z">
+        <test-method status="PASS" signature="beforeScript()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="beforeScript" is-config="true" duration-ms="11774" started-at="2016-07-19T17:22:18Z" finished-at="2016-07-19T17:22:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeScript -->
-        <test-method status="PASS" signature="main()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="main" duration-ms="10142" started-at="2016-07-19T11:57:58Z" finished-at="2016-07-19T11:58:08Z">
+        <test-method status="PASS" signature="main()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="main" duration-ms="13157" started-at="2016-07-19T17:22:30Z" finished-at="2016-07-19T17:22:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- main -->
-        <test-method status="PASS" signature="writeResults(org.testng.ITestResult)[pri:0, instance:testCases.DriverScript@5e5792a0]" name="writeResults" is-config="true" duration-ms="1" started-at="2016-07-19T11:58:08Z" finished-at="2016-07-19T11:58:08Z">
+        <test-method status="PASS" signature="writeResults(org.testng.ITestResult)[pri:0, instance:testCases.DriverScript@5e5792a0]" name="writeResults" is-config="true" duration-ms="1" started-at="2016-07-19T17:22:43Z" finished-at="2016-07-19T17:22:43Z">
           <params>
             <param index="0">
               <value>
@@ -68,32 +68,127 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- writeResults -->
-        <test-method status="PASS" signature="beforeScript()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="beforeScript" is-config="true" duration-ms="4194" started-at="2016-07-19T11:58:08Z" finished-at="2016-07-19T11:58:12Z">
+        <test-method status="PASS" signature="beforeScript()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="beforeScript" is-config="true" duration-ms="5587" started-at="2016-07-19T17:22:43Z" finished-at="2016-07-19T17:22:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeScript -->
-        <test-method status="FAIL" signature="main()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="main" duration-ms="11274" started-at="2016-07-19T11:58:12Z" finished-at="2016-07-19T11:58:23Z">
+        <test-method status="PASS" signature="main()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="main" duration-ms="11211" started-at="2016-07-19T17:22:49Z" finished-at="2016-07-19T17:23:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+        <test-method status="PASS" signature="writeResults(org.testng.ITestResult)[pri:0, instance:testCases.DriverScript@5e5792a0]" name="writeResults" is-config="true" duration-ms="0" started-at="2016-07-19T17:23:00Z" finished-at="2016-07-19T17:23:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=main status=SUCCESS method=DriverScript.main()[pri:0, instance:testCases.DriverScript@5e5792a0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- writeResults -->
+        <test-method status="PASS" signature="beforeScript()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="beforeScript" is-config="true" duration-ms="4896" started-at="2016-07-19T17:23:00Z" finished-at="2016-07-19T17:23:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeScript -->
+        <test-method status="PASS" signature="main()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="main" duration-ms="11779" started-at="2016-07-19T17:23:05Z" finished-at="2016-07-19T17:23:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+        <test-method status="PASS" signature="writeResults(org.testng.ITestResult)[pri:0, instance:testCases.DriverScript@5e5792a0]" name="writeResults" is-config="true" duration-ms="1" started-at="2016-07-19T17:23:17Z" finished-at="2016-07-19T17:23:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=main status=SUCCESS method=DriverScript.main()[pri:0, instance:testCases.DriverScript@5e5792a0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- writeResults -->
+        <test-method status="PASS" signature="beforeScript()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="beforeScript" is-config="true" duration-ms="4996" started-at="2016-07-19T17:23:17Z" finished-at="2016-07-19T17:23:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeScript -->
+        <test-method status="PASS" signature="main()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="main" duration-ms="5730" started-at="2016-07-19T17:23:22Z" finished-at="2016-07-19T17:23:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+        <test-method status="PASS" signature="writeResults(org.testng.ITestResult)[pri:0, instance:testCases.DriverScript@5e5792a0]" name="writeResults" is-config="true" duration-ms="0" started-at="2016-07-19T17:23:28Z" finished-at="2016-07-19T17:23:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=main status=SUCCESS method=DriverScript.main()[pri:0, instance:testCases.DriverScript@5e5792a0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- writeResults -->
+        <test-method status="PASS" signature="beforeScript()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="beforeScript" is-config="true" duration-ms="4935" started-at="2016-07-19T17:23:28Z" finished-at="2016-07-19T17:23:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeScript -->
+        <test-method status="PASS" signature="main()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="main" duration-ms="9475" started-at="2016-07-19T17:23:33Z" finished-at="2016-07-19T17:23:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+        <test-method status="PASS" signature="writeResults(org.testng.ITestResult)[pri:0, instance:testCases.DriverScript@5e5792a0]" name="writeResults" is-config="true" duration-ms="1" started-at="2016-07-19T17:23:42Z" finished-at="2016-07-19T17:23:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=main status=SUCCESS method=DriverScript.main()[pri:0, instance:testCases.DriverScript@5e5792a0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- writeResults -->
+        <test-method status="PASS" signature="beforeScript()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="beforeScript" is-config="true" duration-ms="5306" started-at="2016-07-19T17:23:42Z" finished-at="2016-07-19T17:23:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeScript -->
+        <test-method status="PASS" signature="main()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="main" duration-ms="6392" started-at="2016-07-19T17:23:47Z" finished-at="2016-07-19T17:23:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+        <test-method status="PASS" signature="writeResults(org.testng.ITestResult)[pri:0, instance:testCases.DriverScript@5e5792a0]" name="writeResults" is-config="true" duration-ms="0" started-at="2016-07-19T17:23:54Z" finished-at="2016-07-19T17:23:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=main status=SUCCESS method=DriverScript.main()[pri:0, instance:testCases.DriverScript@5e5792a0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- writeResults -->
+        <test-method status="PASS" signature="beforeScript()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="beforeScript" is-config="true" duration-ms="6614" started-at="2016-07-19T17:23:54Z" finished-at="2016-07-19T17:24:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeScript -->
+        <test-method status="FAIL" signature="main()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="main" duration-ms="13474" started-at="2016-07-19T17:24:00Z" finished-at="2016-07-19T17:24:14Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Unable to locate element: {"method":"id","selector":"ControlGroupSearchView_AvailabilitySearchInputSearchView_TextboxDepartureDate1"}
-Command duration or timeout: 7.00 seconds
+Command duration or timeout: 8.40 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
 System info: host: 'MB-DAKS', ip: '192.168.3.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 395d5ba0-e293-4bfd-b3ef-87fadd5a19e9
+Session ID: 9505a4f2-e277-41aa-85fa-01a3bb12f022
 *** Element info: {Using=id, value=ControlGroupSearchView_AvailabilitySearchInputSearchView_TextboxDepartureDate1}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"ControlGroupSearchView_AvailabilitySearchInputSearchView_TextboxDepartureDate1"}
-Command duration or timeout: 7.00 seconds
+Command duration or timeout: 8.40 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
 System info: host: 'MB-DAKS', ip: '192.168.3.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 395d5ba0-e293-4bfd-b3ef-87fadd5a19e9
+Session ID: 9505a4f2-e277-41aa-85fa-01a3bb12f022
 *** Element info: {Using=id, value=ControlGroupSearchView_AvailabilitySearchInputSearchView_TextboxDepartureDate1}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -106,553 +201,7 @@ Session ID: 395d5ba0-e293-4bfd-b3ef-87fadd5a19e9
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
 	at org.openqa.selenium.By$ById.findElement(By.java:218)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at finalAutomation.SeleniumActionFunctions.sendKeysAction(SeleniumActionFunctions.java:32)
-	at testCases.DriverScript.main(DriverScript.java:42)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"ControlGroupSearchView_AvailabilitySearchInputSearchView_TextboxDepartureDate1"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
-System info: host: 'MB-DAKS', ip: '192.168.3.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/HP/AppData/Local/Temp/anonymous7557419428753603682webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/HP/AppData/Local/Temp/anonymous7557419428753603682webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/HP/AppData/Local/Temp/anonymous7557419428753603682webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/HP/AppData/Local/Temp/anonymous7557419428753603682webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/HP/AppData/Local/Temp/anonymous7557419428753603682webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- main -->
-        <test-method status="PASS" signature="writeResults(org.testng.ITestResult)[pri:0, instance:testCases.DriverScript@5e5792a0]" name="writeResults" is-config="true" duration-ms="354" started-at="2016-07-19T11:58:23Z" finished-at="2016-07-19T11:58:24Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=main status=FAILURE method=DriverScript.main()[pri:0, instance:testCases.DriverScript@5e5792a0] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- writeResults -->
-        <test-method status="PASS" signature="beforeScript()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="beforeScript" is-config="true" duration-ms="3680" started-at="2016-07-19T11:58:24Z" finished-at="2016-07-19T11:58:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeScript -->
-        <test-method status="FAIL" signature="main()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="main" duration-ms="10921" started-at="2016-07-19T11:58:27Z" finished-at="2016-07-19T11:58:38Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: {"method":"id","selector":"ControlGroupSearchView_AvailabilitySearchInputSearchView_TextboxDepartureDate1"}
-Command duration or timeout: 6.60 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
-System info: host: 'MB-DAKS', ip: '192.168.3.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 395d5ba0-e293-4bfd-b3ef-87fadd5a19e9
-*** Element info: {Using=id, value=ControlGroupSearchView_AvailabilitySearchInputSearchView_TextboxDepartureDate1}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"ControlGroupSearchView_AvailabilitySearchInputSearchView_TextboxDepartureDate1"}
-Command duration or timeout: 6.60 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
-System info: host: 'MB-DAKS', ip: '192.168.3.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 395d5ba0-e293-4bfd-b3ef-87fadd5a19e9
-*** Element info: {Using=id, value=ControlGroupSearchView_AvailabilitySearchInputSearchView_TextboxDepartureDate1}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at finalAutomation.SeleniumActionFunctions.sendKeysAction(SeleniumActionFunctions.java:32)
-	at testCases.DriverScript.main(DriverScript.java:42)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"ControlGroupSearchView_AvailabilitySearchInputSearchView_TextboxDepartureDate1"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
-System info: host: 'MB-DAKS', ip: '192.168.3.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/HP/AppData/Local/Temp/anonymous7557419428753603682webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/HP/AppData/Local/Temp/anonymous7557419428753603682webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/HP/AppData/Local/Temp/anonymous7557419428753603682webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/HP/AppData/Local/Temp/anonymous7557419428753603682webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/HP/AppData/Local/Temp/anonymous7557419428753603682webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- main -->
-        <test-method status="PASS" signature="writeResults(org.testng.ITestResult)[pri:0, instance:testCases.DriverScript@5e5792a0]" name="writeResults" is-config="true" duration-ms="343" started-at="2016-07-19T11:58:38Z" finished-at="2016-07-19T11:58:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=main status=FAILURE method=DriverScript.main()[pri:0, instance:testCases.DriverScript@5e5792a0] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- writeResults -->
-        <test-method status="PASS" signature="beforeScript()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="beforeScript" is-config="true" duration-ms="4480" started-at="2016-07-19T11:58:39Z" finished-at="2016-07-19T11:58:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeScript -->
-        <test-method status="FAIL" signature="main()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="main" duration-ms="9701" started-at="2016-07-19T11:58:43Z" finished-at="2016-07-19T11:58:53Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: {"method":"id","selector":"ControlGroupSearchView_AvailabilitySearchInputSearchView_TextboxDepartureDate1"}
-Command duration or timeout: 5.45 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
-System info: host: 'MB-DAKS', ip: '192.168.3.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 395d5ba0-e293-4bfd-b3ef-87fadd5a19e9
-*** Element info: {Using=id, value=ControlGroupSearchView_AvailabilitySearchInputSearchView_TextboxDepartureDate1}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"ControlGroupSearchView_AvailabilitySearchInputSearchView_TextboxDepartureDate1"}
-Command duration or timeout: 5.45 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
-System info: host: 'MB-DAKS', ip: '192.168.3.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 395d5ba0-e293-4bfd-b3ef-87fadd5a19e9
-*** Element info: {Using=id, value=ControlGroupSearchView_AvailabilitySearchInputSearchView_TextboxDepartureDate1}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at finalAutomation.SeleniumActionFunctions.sendKeysAction(SeleniumActionFunctions.java:32)
-	at testCases.DriverScript.main(DriverScript.java:42)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"ControlGroupSearchView_AvailabilitySearchInputSearchView_TextboxDepartureDate1"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
-System info: host: 'MB-DAKS', ip: '192.168.3.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/HP/AppData/Local/Temp/anonymous7557419428753603682webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/HP/AppData/Local/Temp/anonymous7557419428753603682webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/HP/AppData/Local/Temp/anonymous7557419428753603682webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/HP/AppData/Local/Temp/anonymous7557419428753603682webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/HP/AppData/Local/Temp/anonymous7557419428753603682webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- main -->
-        <test-method status="PASS" signature="writeResults(org.testng.ITestResult)[pri:0, instance:testCases.DriverScript@5e5792a0]" name="writeResults" is-config="true" duration-ms="263" started-at="2016-07-19T11:58:53Z" finished-at="2016-07-19T11:58:53Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=main status=FAILURE method=DriverScript.main()[pri:0, instance:testCases.DriverScript@5e5792a0] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- writeResults -->
-        <test-method status="PASS" signature="beforeScript()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="beforeScript" is-config="true" duration-ms="3666" started-at="2016-07-19T11:58:53Z" finished-at="2016-07-19T11:58:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeScript -->
-        <test-method status="FAIL" signature="main()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="main" duration-ms="9546" started-at="2016-07-19T11:58:57Z" finished-at="2016-07-19T11:59:06Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: {"method":"id","selector":"ControlGroupSearchView_AvailabilitySearchInputSearchView_TextboxDepartureDate1"}
-Command duration or timeout: 5.08 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
-System info: host: 'MB-DAKS', ip: '192.168.3.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 395d5ba0-e293-4bfd-b3ef-87fadd5a19e9
-*** Element info: {Using=id, value=ControlGroupSearchView_AvailabilitySearchInputSearchView_TextboxDepartureDate1}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"ControlGroupSearchView_AvailabilitySearchInputSearchView_TextboxDepartureDate1"}
-Command duration or timeout: 5.08 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
-System info: host: 'MB-DAKS', ip: '192.168.3.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 395d5ba0-e293-4bfd-b3ef-87fadd5a19e9
-*** Element info: {Using=id, value=ControlGroupSearchView_AvailabilitySearchInputSearchView_TextboxDepartureDate1}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at finalAutomation.SeleniumActionFunctions.sendKeysAction(SeleniumActionFunctions.java:32)
-	at testCases.DriverScript.main(DriverScript.java:42)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"ControlGroupSearchView_AvailabilitySearchInputSearchView_TextboxDepartureDate1"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
-System info: host: 'MB-DAKS', ip: '192.168.3.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/HP/AppData/Local/Temp/anonymous7557419428753603682webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/HP/AppData/Local/Temp/anonymous7557419428753603682webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/HP/AppData/Local/Temp/anonymous7557419428753603682webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/HP/AppData/Local/Temp/anonymous7557419428753603682webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/HP/AppData/Local/Temp/anonymous7557419428753603682webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- main -->
-        <test-method status="PASS" signature="writeResults(org.testng.ITestResult)[pri:0, instance:testCases.DriverScript@5e5792a0]" name="writeResults" is-config="true" duration-ms="194" started-at="2016-07-19T11:59:06Z" finished-at="2016-07-19T11:59:07Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=main status=FAILURE method=DriverScript.main()[pri:0, instance:testCases.DriverScript@5e5792a0] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- writeResults -->
-        <test-method status="PASS" signature="beforeScript()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="beforeScript" is-config="true" duration-ms="3534" started-at="2016-07-19T11:59:07Z" finished-at="2016-07-19T11:59:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeScript -->
-        <test-method status="FAIL" signature="main()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="main" duration-ms="23038" started-at="2016-07-19T11:59:10Z" finished-at="2016-07-19T11:59:33Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: {"method":"id","selector":"ControlGroupSearchView_AvailabilitySearchInputSearchView_TextboxDepartureDate1"}
-Command duration or timeout: 18.44 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
-System info: host: 'MB-DAKS', ip: '192.168.3.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 395d5ba0-e293-4bfd-b3ef-87fadd5a19e9
-*** Element info: {Using=id, value=ControlGroupSearchView_AvailabilitySearchInputSearchView_TextboxDepartureDate1}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"ControlGroupSearchView_AvailabilitySearchInputSearchView_TextboxDepartureDate1"}
-Command duration or timeout: 18.44 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
-System info: host: 'MB-DAKS', ip: '192.168.3.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 395d5ba0-e293-4bfd-b3ef-87fadd5a19e9
-*** Element info: {Using=id, value=ControlGroupSearchView_AvailabilitySearchInputSearchView_TextboxDepartureDate1}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at finalAutomation.SeleniumActionFunctions.sendKeysAction(SeleniumActionFunctions.java:32)
-	at testCases.DriverScript.main(DriverScript.java:42)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"ControlGroupSearchView_AvailabilitySearchInputSearchView_TextboxDepartureDate1"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
-System info: host: 'MB-DAKS', ip: '192.168.3.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/HP/AppData/Local/Temp/anonymous7557419428753603682webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/HP/AppData/Local/Temp/anonymous7557419428753603682webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/HP/AppData/Local/Temp/anonymous7557419428753603682webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/HP/AppData/Local/Temp/anonymous7557419428753603682webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/HP/AppData/Local/Temp/anonymous7557419428753603682webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- main -->
-        <test-method status="PASS" signature="writeResults(org.testng.ITestResult)[pri:0, instance:testCases.DriverScript@5e5792a0]" name="writeResults" is-config="true" duration-ms="10087" started-at="2016-07-19T11:59:33Z" finished-at="2016-07-19T11:59:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=main status=FAILURE method=DriverScript.main()[pri:0, instance:testCases.DriverScript@5e5792a0] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- writeResults -->
-        <test-method status="PASS" signature="beforeScript()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="beforeScript" is-config="true" duration-ms="3722" started-at="2016-07-19T11:59:43Z" finished-at="2016-07-19T11:59:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeScript -->
-        <test-method status="FAIL" signature="main()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="main" duration-ms="30453" started-at="2016-07-19T11:59:47Z" finished-at="2016-07-19T12:00:17Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: {"method":"id","selector":"ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListPassengerType_ADT"}
-Command duration or timeout: 11.20 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
-System info: host: 'MB-DAKS', ip: '192.168.3.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 395d5ba0-e293-4bfd-b3ef-87fadd5a19e9
-*** Element info: {Using=id, value=ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListPassengerType_ADT}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListPassengerType_ADT"}
-Command duration or timeout: 11.20 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
-System info: host: 'MB-DAKS', ip: '192.168.3.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 395d5ba0-e293-4bfd-b3ef-87fadd5a19e9
-*** Element info: {Using=id, value=ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListPassengerType_ADT}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at finalAutomation.SeleniumActionFunctions.selectAction(SeleniumActionFunctions.java:25)
-	at testCases.DriverScript.main(DriverScript.java:46)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListPassengerType_ADT"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
-System info: host: 'MB-DAKS', ip: '192.168.3.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/HP/AppData/Local/Temp/anonymous7557419428753603682webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/HP/AppData/Local/Temp/anonymous7557419428753603682webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/HP/AppData/Local/Temp/anonymous7557419428753603682webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/HP/AppData/Local/Temp/anonymous7557419428753603682webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/HP/AppData/Local/Temp/anonymous7557419428753603682webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- main -->
-        <test-method status="PASS" signature="writeResults(org.testng.ITestResult)[pri:0, instance:testCases.DriverScript@5e5792a0]" name="writeResults" is-config="true" duration-ms="276" started-at="2016-07-19T12:00:17Z" finished-at="2016-07-19T12:00:18Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=main status=FAILURE method=DriverScript.main()[pri:0, instance:testCases.DriverScript@5e5792a0] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- writeResults -->
-        <test-method status="PASS" signature="beforeScript()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="beforeScript" is-config="true" duration-ms="4841" started-at="2016-07-19T12:00:18Z" finished-at="2016-07-19T12:00:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeScript -->
-        <test-method status="FAIL" signature="main()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="main" duration-ms="6936" started-at="2016-07-19T12:00:23Z" finished-at="2016-07-19T12:00:30Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: {"method":"id","selector":"ControlGroupSearchView_AvailabilitySearchInputSearchView_TextBoxMarketDestination1"}
-Command duration or timeout: 6.69 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
-System info: host: 'MB-DAKS', ip: '192.168.3.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 395d5ba0-e293-4bfd-b3ef-87fadd5a19e9
-*** Element info: {Using=id, value=ControlGroupSearchView_AvailabilitySearchInputSearchView_TextBoxMarketDestination1}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"ControlGroupSearchView_AvailabilitySearchInputSearchView_TextBoxMarketDestination1"}
-Command duration or timeout: 6.69 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
-System info: host: 'MB-DAKS', ip: '192.168.3.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 395d5ba0-e293-4bfd-b3ef-87fadd5a19e9
-*** Element info: {Using=id, value=ControlGroupSearchView_AvailabilitySearchInputSearchView_TextBoxMarketDestination1}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at finalAutomation.SeleniumActionFunctions.sendKeysAction(SeleniumActionFunctions.java:32)
+	at finalAutomation.SeleniumActionFunctions.sendKeysAction(SeleniumActionFunctions.java:31)
 	at testCases.DriverScript.main(DriverScript.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -678,23 +227,23 @@ Session ID: 395d5ba0-e293-4bfd-b3ef-87fadd5a19e9
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"ControlGroupSearchView_AvailabilitySearchInputSearchView_TextBoxMarketDestination1"}
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"ControlGroupSearchView_AvailabilitySearchInputSearchView_TextboxDepartureDate1"}
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
 System info: host: 'MB-DAKS', ip: '192.168.3.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
 Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/HP/AppData/Local/Temp/anonymous7557419428753603682webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/HP/AppData/Local/Temp/anonymous7557419428753603682webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/HP/AppData/Local/Temp/anonymous7557419428753603682webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/HP/AppData/Local/Temp/anonymous7557419428753603682webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/HP/AppData/Local/Temp/anonymous7557419428753603682webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/HP/AppData/Local/Temp/anonymous8694503077383969206webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/HP/AppData/Local/Temp/anonymous8694503077383969206webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/HP/AppData/Local/Temp/anonymous8694503077383969206webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/HP/AppData/Local/Temp/anonymous8694503077383969206webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/HP/AppData/Local/Temp/anonymous8694503077383969206webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- main -->
-        <test-method status="PASS" signature="writeResults(org.testng.ITestResult)[pri:0, instance:testCases.DriverScript@5e5792a0]" name="writeResults" is-config="true" duration-ms="241" started-at="2016-07-19T12:00:30Z" finished-at="2016-07-19T12:00:30Z">
+        <test-method status="PASS" signature="writeResults(org.testng.ITestResult)[pri:0, instance:testCases.DriverScript@5e5792a0]" name="writeResults" is-config="true" duration-ms="496" started-at="2016-07-19T17:24:14Z" finished-at="2016-07-19T17:24:14Z">
           <params>
             <param index="0">
               <value>
@@ -705,11 +254,102 @@ Driver info: driver.version: unknown
           <reporter-output>
           </reporter-output>
         </test-method> <!-- writeResults -->
-        <test-method status="PASS" signature="afterScript()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="afterScript" is-config="true" duration-ms="1291" started-at="2016-07-19T12:00:30Z" finished-at="2016-07-19T12:00:31Z">
+        <test-method status="PASS" signature="beforeScript()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="beforeScript" is-config="true" duration-ms="4015" started-at="2016-07-19T17:24:14Z" finished-at="2016-07-19T17:24:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeScript -->
+        <test-method status="FAIL" signature="main()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="main" duration-ms="9768" started-at="2016-07-19T17:24:18Z" finished-at="2016-07-19T17:24:28Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"id","selector":"ControlGroupSearchView_AvailabilitySearchInputSearchView_TextboxDepartureDate1"}
+Command duration or timeout: 5.38 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
+System info: host: 'MB-DAKS', ip: '192.168.3.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 9505a4f2-e277-41aa-85fa-01a3bb12f022
+*** Element info: {Using=id, value=ControlGroupSearchView_AvailabilitySearchInputSearchView_TextboxDepartureDate1}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"ControlGroupSearchView_AvailabilitySearchInputSearchView_TextboxDepartureDate1"}
+Command duration or timeout: 5.38 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
+System info: host: 'MB-DAKS', ip: '192.168.3.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 9505a4f2-e277-41aa-85fa-01a3bb12f022
+*** Element info: {Using=id, value=ControlGroupSearchView_AvailabilitySearchInputSearchView_TextboxDepartureDate1}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at finalAutomation.SeleniumActionFunctions.sendKeysAction(SeleniumActionFunctions.java:31)
+	at testCases.DriverScript.main(DriverScript.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"ControlGroupSearchView_AvailabilitySearchInputSearchView_TextboxDepartureDate1"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
+System info: host: 'MB-DAKS', ip: '192.168.3.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/HP/AppData/Local/Temp/anonymous8694503077383969206webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/HP/AppData/Local/Temp/anonymous8694503077383969206webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/HP/AppData/Local/Temp/anonymous8694503077383969206webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/HP/AppData/Local/Temp/anonymous8694503077383969206webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/HP/AppData/Local/Temp/anonymous8694503077383969206webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+        <test-method status="PASS" signature="writeResults(org.testng.ITestResult)[pri:0, instance:testCases.DriverScript@5e5792a0]" name="writeResults" is-config="true" duration-ms="220" started-at="2016-07-19T17:24:28Z" finished-at="2016-07-19T17:24:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=main status=FAILURE method=DriverScript.main()[pri:0, instance:testCases.DriverScript@5e5792a0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- writeResults -->
+        <test-method status="PASS" signature="afterScript()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="afterScript" is-config="true" duration-ms="1789" started-at="2016-07-19T17:24:28Z" finished-at="2016-07-19T17:24:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterScript -->
-        <test-method status="PASS" signature="setupAfterSuite()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="setupAfterSuite" is-config="true" duration-ms="5411" started-at="2016-07-19T12:00:31Z" finished-at="2016-07-19T12:00:37Z">
+        <test-method status="PASS" signature="setupAfterSuite()[pri:0, instance:testCases.DriverScript@5e5792a0]" name="setupAfterSuite" is-config="true" duration-ms="5432" started-at="2016-07-19T17:24:30Z" finished-at="2016-07-19T17:24:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupAfterSuite -->

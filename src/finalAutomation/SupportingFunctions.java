@@ -84,13 +84,13 @@ public class SupportingFunctions {
 	
 	//to get correct row number for a values
 	public static int extractRowNum(String rowValue, String rowDecider, Sheet sheet, Workbook book) throws IOException{
-		String testData = "";
+		String testData = "", colValue = "Page", colDecider = "Control";
 		//iterate over all the rows to get those containing the given pageName
 		for(int irow = sheet.getFirstRowNum(); irow <= sheet.getLastRowNum(); irow++){
-			int col = extractColumnNum("Page", sheet, book);
+			int col = extractColumnNum(colValue, sheet, book);
 			testData = getValue(col, irow, sheet, book);
 			if (testData.equals(rowValue)){
-				int col2 = extractColumnNum("Control", sheet, book);
+				int col2 = extractColumnNum(colDecider, sheet, book);
 				int currentRowNum = irow;
 				testData = getValue(col2, currentRowNum, sheet, book);			
 				if (testData.equals(rowDecider))
@@ -112,7 +112,7 @@ public class SupportingFunctions {
 	//function to create the result sheet at run time
 	public static void createNewSheet(WebsiteSpecificData dataObject) throws IOException{
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
-		dataObject.resultFile += timeStamp+".xlsx";
+		dataObject.resultFile += timeStamp + ".xlsx";
 		dataObject.resultWorkBook = new XSSFWorkbook();
 		int index = dataObject.resultWorkBook.getSheetIndex("Sheet0");
 		if(index == -1)
@@ -156,13 +156,12 @@ public class SupportingFunctions {
 			    }
 		        FileOutputStream outstream = new FileOutputStream(dataObject.resultFile);
 		        dataObject.resultWorkBook.write(outstream);
-		        System.out.println("Excel written successfully..");
+		        System.out.println("Excel written successfully!!!");
 		}
 		
 		//function to get screeenshots at a particular time
 		public static String getScreenshot(WebsiteSpecificData dataObject) throws Exception{
 	        File scrFile = ((TakesScreenshot)dataObject.driver).getScreenshotAs(OutputType.FILE);
-	     //The below method will save the screen shot in d drive with name "screenshot.png"
 	        String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
 	        String screenShotName = dataObject.screenShotBase + timeStamp + ".gif";
 	        FileUtils.copyFile(scrFile, new File(screenShotName));
@@ -193,7 +192,7 @@ public class SupportingFunctions {
 		    msg.setRecipients(Message.RecipientType.TO, toAddresses);
 		    msg.setSubject(dataObject.subject);
 		    msg.setSentDate(new Date());
-		    // creates message part*
+		    // creates message part
 		    MimeBodyPart part1 = new MimeBodyPart();
 		    part1.setContent(dataObject.message, "text/html");
 		    MimeBodyPart part2 = new MimeBodyPart();

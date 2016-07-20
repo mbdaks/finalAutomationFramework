@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.Select;
 import testCases.WebsiteSpecificData;
 
 public class SeleniumActionFunctions {
-	public static int currentRowInDataExcel=0;
+	public static int currentRowInDataExcel = 0;
 	
 	public static void openWebsite(WebsiteSpecificData dataObject){
 		long startTime = Calendar.getInstance().getTimeInMillis();

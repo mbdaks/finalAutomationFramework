@@ -7,8 +7,10 @@ public class IndependentAutomationFunctions {
 	//function to get the property value i.e., the id value of a specific control
 	public static String returnLocatorValue(WebsiteSpecificData object, String pageName, String controlHead) throws IOException{
 		String controlType = "";
-		if(controlHead == "TripType" || controlHead == "TravelOption")
-			controlType = SupportingFunctions.getValue(SupportingFunctions.extractColumnNum(controlHead, object.dataSheet, object.dataWorkBook), SeleniumActionFunctions.currentRowInDataExcel, object.dataSheet, object.dataWorkBook);
+		if(controlHead == "TripType" || controlHead == "TravelOption"){
+			int currentColumnInDataExcel=SupportingFunctions.extractColumnNum(controlHead, object.dataSheet, object.dataWorkBook);
+			controlType = SupportingFunctions.getValue(currentColumnInDataExcel, SeleniumActionFunctions.currentRowInDataExcel, object.dataSheet, object.dataWorkBook);
+		}
 		else
 			controlType = controlHead;		
 		int propertyValueRowNum = SupportingFunctions.extractRowNum(pageName, controlType, object.propertySheet, object.propertyWorkBook);
