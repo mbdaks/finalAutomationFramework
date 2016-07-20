@@ -3,13 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="finalAutomationFramework.TestCase1">
+      <class name="testCases.DriverScript">
         <methods>
-          <include name="main"/>
-          <include name="createNewSheet"/>
+          <include name="createResultSheet"/>
           <include name="beforeScript"/>
+          <include name="main"/>
+          <include name="writeResults"/>
+          <include name="afterScript"/>
+          <include name="setupAfterSuite"/>
         </methods>
-      </class> <!-- finalAutomationFramework.TestCase1 -->
+      </class> <!-- testCases.DriverScript -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

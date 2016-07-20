@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="finalAutomationFramework.TestCase1"/>
+      <class name="testCases.DriverScript"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
