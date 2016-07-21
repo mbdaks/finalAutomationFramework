@@ -7,7 +7,6 @@ import java.util.Properties;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Keyboard;
@@ -73,8 +72,13 @@ public class WebsiteSpecificData {
 	 * LinkedHashMap for storing test results before they are written in the result sheet
 	 */
 	public HashMap<String, Object[]> testresultdata;
+	/**
+	 * Webdriver to open the browser and perform selenium related actions
+	 */
 	public WebDriver driver;
-	public JavascriptExecutor jse;
+	/**
+	 * Used to automate keyboard keys like enter and tab and backspace
+	 */
 	public Keyboard kb;
 	
 	/**
@@ -112,7 +116,6 @@ public class WebsiteSpecificData {
 		propertySheet = SupportingFunctions.returnSheet(propertyWorkBook);
 		testresultdata = new HashMap<String, Object[]>();
 	    driver = new FirefoxDriver();
-		jse = (JavascriptExecutor)driver;
 		kb = ((RemoteWebDriver) driver).getKeyboard();
 	
 	}

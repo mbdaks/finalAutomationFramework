@@ -1,7 +1,3 @@
-/**
- * Contains test data specific classes
- * @author Mehak Bains
- */
 package testCases;
 
 import java.io.IOException;
