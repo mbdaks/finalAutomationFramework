@@ -117,6 +117,5 @@ public class WebsiteSpecificData {
 		testresultdata = new HashMap<String, Object[]>();
 	    driver = new FirefoxDriver();
 		kb = ((RemoteWebDriver) driver).getKeyboard();
-	
 	}
 }

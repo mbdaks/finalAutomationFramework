@@ -74,19 +74,25 @@ public class DriverScript extends SeleniumActionFunctions{
 		long startTime = Calendar.getInstance().getTimeInMillis();
 		String pageName = "SearchPage";
 		currentRowInDataExcel++;
-		clickAction(dataObject, pageName, "TripType");
-		sendKeysAction(dataObject, pageName, "Source");
-		sendKeysAction(dataObject, pageName, "Destination");
-		sendKeysAction(dataObject, pageName, "DepartDate");
+		clickAction(dataObject, "id", pageName, "TripType");
+		sendKeysAction(dataObject, "id", pageName, "Source");
+		sendKeysAction(dataObject, "id", pageName, "Destination");
+		sendKeysAction(dataObject, "id", pageName, "DepartDate");
 		if(dataObject.driver.findElement(By.id(IndependentAutomationFunctions.returnLocatorValue(dataObject, pageName, "ReturnDate"))).isEnabled()){
-			sendKeysAction(dataObject, pageName, "ReturnDate");
+			sendKeysAction(dataObject, "id", pageName, "ReturnDate");
 		}
-		selectAction(dataObject, pageName, "AdultPax");
-		selectAction(dataObject, pageName, "ChildPax");
-		selectAction(dataObject, pageName, "InfantPax");
-		clickAction(dataObject, pageName, "TravelOption");
-		clickAction(dataObject,pageName, "SearchButton");
+		selectAction(dataObject, "id", pageName, "AdultPax");
+		selectAction(dataObject, "id", pageName, "ChildPax");
+		selectAction(dataObject, "id", pageName, "InfantPax");
+		clickAction(dataObject, "id", pageName, "TravelOption");
+		clickAction(dataObject, "id", pageName, "SearchButton");
 		System.out.println("TIME TAKEN: " + (Calendar.getInstance().getTimeInMillis() - startTime));
+		
+		pageName = "SelectPage";
+		System.out.println("----------Search-----------");
+		clickAction(dataObject, "id", pageName, "FlightChoice");
+		clickAction(dataObject, "cssSelector", pageName, "FareType");
+		clickAction(dataObject, "id", pageName, "SelectButton");
 	}
 	
 	/**

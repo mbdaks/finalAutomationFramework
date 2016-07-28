@@ -22,7 +22,7 @@ public class IndependentAutomationFunctions {
 	public static String returnLocatorValue(WebsiteSpecificData object, String pageName, String controlHead) throws IOException{
 		String controlType = "";
 		//Special handling for radio buttons
-		if(controlHead == "TripType" || controlHead == "TravelOption"){
+		if(controlHead == "TripType" || controlHead == "TravelOption" || controlHead == "FareType" || controlHead == "FlightChoice"){
 			int currentColumnInDataExcel=SupportingFunctions.extractColumnNum(controlHead, object.dataSheet, object.dataWorkBook);
 			controlType = SupportingFunctions.getValue(currentColumnInDataExcel, SeleniumActionFunctions.currentRowInDataExcel, object.dataSheet, object.dataWorkBook);
 		}
